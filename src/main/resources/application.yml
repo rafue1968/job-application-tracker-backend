@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/job_tracker
     username: postgres
-    password: process.env.YOUR_POSTGRESQL_PASSWORD
+    password: ${process.env.YOUR_POSTGRESQL_PASSWORD}
 
   jpa:
     hibernate:

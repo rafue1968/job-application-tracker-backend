@@ -13,6 +13,10 @@ public class Job {
     @Column(nullable = false)
     private String title;
 
+    private String description;
+
+    private String status;
+
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
